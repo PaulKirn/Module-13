@@ -15,11 +15,15 @@ int main()
 
 	std::cout << name << " " << age << "\n";*/
 
-	std::string first = "1050", second = "206080";
+	/*std::string first = "1050", second = "206080";
 
 	std::cout << first + second << "\n";
 	std::cout << first.length() << "\n";
-	std::cout << second.length() << "\n";
+	std::cout << second.length() << "\n";*/
+
+	std::string hello = "Hello";
+	char e = hello[1];      // e
+	std::cout << hello[0] << " " << hello[4] << "\n";
 
 	std::cin;
 	return 0;
