@@ -41,7 +41,7 @@ int main()
 	//	std::cout << "yay\n";
 	//}
 
-	for (int i = 0; i < 10; i++)
+	/*for (int i = 0; i < 10; i++)
 	{
 		std::cout << i << "\n";
 		if (i < 5)
@@ -49,5 +49,42 @@ int main()
 			continue;
 		}
 		std::cout << i * i << "\n";
+	}*/
+
+
+	//int a = 4;
+	//if (a % 2 == 0)
+	//{
+	//	std::cout << "Chetnoe!";
+	//}
+	//else
+	//{
+	//	std::cout << "Nechetnoe";
+	//}
+
+	for (int a = 0; a < 20; a++)
+	{
+		
+		if (a % 2 != 0)
+		{
+			continue;
+		}
+		std::cout << a << "\n";
 	}
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
