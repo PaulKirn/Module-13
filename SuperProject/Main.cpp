@@ -3,6 +3,8 @@
 #include <iomanip>
 #include <string>
 
+
+
 int main()
 {
 	/*int a = 1;
@@ -64,7 +66,6 @@ int main()
 
 	for (int a = 0; a < 20; a++)
 	{
-		
 		if (a % 2 != 0)
 		{
 			continue;
@@ -74,8 +75,43 @@ int main()
 
 
 
+	std::cout << " " << "\n";;
+
+	
+	
+	int a = 0;
+	
+	std::cout << "Enter '1' to display odd numbers, or '0' to display even numbers:";
+	std::cin >> a;
+	if (true) 
+	{
+		for (int i = 0; i < 20; i++)
+		{
+			if (i % 2 != a)
+			{
+				continue;
+			}
+			std::cout << i << "\n";	
+		}
+	}
 
 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+
+	
 	
 	
 	
