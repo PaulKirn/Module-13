@@ -5,26 +5,49 @@
 
 int main()
 {
-	/*std::cout << "Enter your name: ";
-	std::string name;
-	std::getline(std::cin, name);
+	/*int a = 1;
 
-	std::cout << "Enter your age: ";
-	std::string age;
-	std::getline(std::cin, age);
+	if (a!=0)
+	{
+		std::cout << "true\n";
+	}
+	else if (a==0)
+	{
+		std::cout << "else!\n";
+	}*/
 
-	std::cout << name << " " << age << "\n";*/
 
-	/*std::string first = "1050", second = "206080";
+	//int a = 1;
+	//const int b = 1;
 
-	std::cout << first + second << "\n";
-	std::cout << first.length() << "\n";
-	std::cout << second.length() << "\n";*/
+	//switch (a)
+	//{
+	//case b: // a==1
+	//	std::cout << "a==1";
+	//	break;
+	//case 0:
+	//	std::cout << "a==0";
+	//	break;
+	//default:
+	//	std::cout << "default";
+	//	break;
+	//}
 
-	std::string hello = "Hello";
-	char e = hello[1];      // e
-	std::cout << hello[0] << " " << hello[4] << "\n";
+	//int i = 0;
 
-	std::cin;
-	return 0;
+	//while (i < 5)
+	//{
+	//	i++;
+	//	std::cout << "yay\n";
+	//}
+
+	for (int i = 0; i < 10; i++)
+	{
+		std::cout << i << "\n";
+		if (i < 5)
+		{
+			continue;
+		}
+		std::cout << i * i << "\n";
+	}
 }
