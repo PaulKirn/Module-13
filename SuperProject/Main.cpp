@@ -3,32 +3,47 @@
 #include <iomanip>
 #include <string>
 
+namespace A
+{
+	void a()
+	{
+		std::cout << "a";
+	}
+
+	namespace AB
+	{
+		void a()
+		{
+			std::cout << "ab";
+		}
+	}
+}
+
+
+//void a()
+//{
+//	std::cout << "b";
+//}
+//
+//namespace AAB = A::AB;
+
+void Calc()
+{
+	using namespace A;
+	a();
+}
+
 
 
 int main()
 {
-	/*const int size = 10;
-	int array[size] = { 1,2,3,4,5,6,7,8,9,10 };*/
+	/*A::a();
+	a();
+	A::AB::a();
+	AAB::a();*/
 
-	/*std::cout << array[0];*/
-
-	/*for (int i = 0; i < size; i++)
-	{
-		std::cout << array[i];
-	}*/
+	Calc();
 
 
-	const int size = 2;
-	int array[size][size] = { {0, 1}, {2, 3} };
 
-	/*std::cout << array[0];*/
-
-	for (int i = 0; i < size; i++)
-	{
-		for (int j = 0; j < size; j++)
-		{
-			std::cout << array[i][j];
-		}
-		std::cout << '\n';
-	}
 }
