@@ -3,47 +3,9 @@
 #include <iomanip>
 #include <string>
 
-namespace A
-{
-	void a()
-	{
-		std::cout << "a";
-	}
-
-	namespace AB
-	{
-		void a()
-		{
-			std::cout << "ab";
-		}
-	}
-}
-
-
-//void a()
-//{
-//	std::cout << "b";
-//}
-//
-//namespace AAB = A::AB;
-
-void Calc()
-{
-	using namespace A;
-	a();
-}
-
-
 
 int main()
 {
-	/*A::a();
-	a();
-	A::AB::a();
-	AAB::a();*/
-
-	Calc();
-
-
-
+	bool a = false;
+	std::cout << (a || true);
 }
