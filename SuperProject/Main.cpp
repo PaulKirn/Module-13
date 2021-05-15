@@ -7,120 +7,28 @@
 
 int main()
 {
-	/*int a = 1;
+	/*const int size = 10;
+	int array[size] = { 1,2,3,4,5,6,7,8,9,10 };*/
 
-	if (a!=0)
+	/*std::cout << array[0];*/
+
+	/*for (int i = 0; i < size; i++)
 	{
-		std::cout << "true\n";
-	}
-	else if (a==0)
-	{
-		std::cout << "else!\n";
+		std::cout << array[i];
 	}*/
 
 
-	//int a = 1;
-	//const int b = 1;
+	const int size = 2;
+	int array[size][size] = { {0, 1}, {2, 3} };
 
-	//switch (a)
-	//{
-	//case b: // a==1
-	//	std::cout << "a==1";
-	//	break;
-	//case 0:
-	//	std::cout << "a==0";
-	//	break;
-	//default:
-	//	std::cout << "default";
-	//	break;
-	//}
+	/*std::cout << array[0];*/
 
-	//int i = 0;
-
-	//while (i < 5)
-	//{
-	//	i++;
-	//	std::cout << "yay\n";
-	//}
-
-	/*for (int i = 0; i < 10; i++)
+	for (int i = 0; i < size; i++)
 	{
-		std::cout << i << "\n";
-		if (i < 5)
+		for (int j = 0; j < size; j++)
 		{
-			continue;
+			std::cout << array[i][j];
 		}
-		std::cout << i * i << "\n";
-	}*/
-
-
-	//int a = 4;
-	//if (a % 2 == 0)
-	//{
-	//	std::cout << "Chetnoe!";
-	//}
-	//else
-	//{
-	//	std::cout << "Nechetnoe";
-	//}
-
-	for (int a = 0; a < 20; a++)
-	{
-		if (a % 2 != 0)
-		{
-			continue;
-		}
-		std::cout << a << "\n";
+		std::cout << '\n';
 	}
-
-
-
-	std::cout << " " << "\n";;
-
-	
-	
-	int a = 0;
-	
-	std::cout << "Enter '1' to display odd numbers, or '0' to display even numbers:";
-	std::cin >> a;
-	if (true) 
-	{
-		for (int i = 0; i < 20; i++)
-		{
-			if (i % 2 != a)
-			{
-				continue;
-			}
-			std::cout << i << "\n";	
-		}
-	}
-
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
