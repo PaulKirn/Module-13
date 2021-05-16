@@ -4,35 +4,26 @@
 using namespace std;
 
 
-class Example
+class Vector
 {
+public:
+	Vector() : x(5), y(5), z(5)
+	{}
+	Vector(double _x, double _y, double _z) : x(_x), y(_y), z(_z)
+	{}
+	void Show()
+	{
+		cout << '\n' << x << ' ' << y << ' ' << z;
+	}
 private:
-	int a;
-public:	
-	Example() : a(1)
-	{}
-
-	Example(int newA): a(newA)
-	{}
-
-	int GetA()
-	{
-		return a;
-	}
-
-	void SetA(int newA)
-	{
-		a = newA;
-	}
+	double x = 0;
+	double y = 0;
+	double z = 0;
 };
+
 
 int main()
 {
-	/*Example temp, temp1;
-	temp.SetA(5);
-	temp1.SetA(10);
-	cout << temp.GetA() << '\n' << temp1.GetA();*/
-	
-	Example temp(11);
-	cout << temp.GetA();
+	Vector v(10, 10,10);
+	v.Show();
 }
