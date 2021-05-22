@@ -6,18 +6,25 @@ using namespace std;
 
 int main()
 {
-	int x = 10;
-	int* p = &x;
-	cout << p << '\n';
-	cout << *p << '\n';
+	//int a[3] = { 0,1,2 };
+	//int* p = &a[0];
+	//cout << *p << '\n';
+	//cout << *(p + 1) << '\n';
 
-	double a = 5.2;
+	//for (int* p = &a[0]; p < a + 3; p++)
+	//{
+	//	cout << *p << '\n';
+	//}
 
-	void* p1;
-	p1 = &x;
-	p1 = &a;
+	//int x;
+	//cin >> x;
+	//int* p = new int[x];
+	//delete p;
+	//p = nullptr;
 
-	cout << *(static_cast<double*>(p1));
+	const int x = 1;
+	const int* const p = &x;
+
 }
 
 
