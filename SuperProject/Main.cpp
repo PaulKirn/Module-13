@@ -1,29 +1,23 @@
 
+
 #include <iostream>
 
 using namespace std;
 
-
-class Vector
-{
-public:
-	Vector() : x(5), y(5), z(5)
-	{}
-	Vector(double _x, double _y, double _z) : x(_x), y(_y), z(_z)
-	{}
-	void Show()
-	{
-		cout << '\n' << x << ' ' << y << ' ' << z;
-	}
-private:
-	double x = 0;
-	double y = 0;
-	double z = 0;
-};
-
-
 int main()
 {
-	Vector v(10, 10,10);
-	v.Show();
+	int x = 10;
+	int* p = &x;
+	cout << p << '\n';
+	cout << *p << '\n';
+
+	double a = 5.2;
+
+	void* p1;
+	p1 = &x;
+	p1 = &a;
+
+	cout << *(static_cast<double*>(p1));
 }
+
+
