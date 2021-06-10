@@ -5,49 +5,47 @@ using namespace std;
 
 class A
 {
-private:
+protected:
 	int x;
 public:
+	A() {}
+	A(int _x) : x(_x)
+	{}
 	int GetX()
 	{
 		return x;
 	}
-	A()
+
+	virtual void Show()
 	{
-		cout << "A constructor\n";
+		cout << "A";
 	}
 };
 
-class B : A
+class B : public A
 {
 private:
 	double y;
 public:
+	B() {}
+	B(double _y, int _x) : y(_y), A(_x)
+	{}
 	double GetY()
 	{
-		return y;
+		return x + y;
 	}
-	B()
-	{
-		cout << "B constructor\n";
-	}
-};
 
-class  C : B
-{
-public:
-	C()
+	void Show() override
 	{
-		cout << "C constructor\n";
+		cout << "B";
 	}
 };
 
 int main()
 {
-	/*A* p1 = new A;*/
-	C* p = new C;
-
-	
+	A* p = new B(5.2, 2);
+	/*cout << p->GetX() << ' ' << p->GetY();*/
+	p->Show();
 }
 
 
