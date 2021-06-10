@@ -1,27 +1,53 @@
 
-
 #include <iostream>
 
 using namespace std;
 
-int sum(int a, int b)
+class A
 {
-	return a + b;
-}
+private:
+	int x;
+public:
+	int GetX()
+	{
+		return x;
+	}
+	A()
+	{
+		cout << "A constructor\n";
+	}
+};
 
-//int sum(int a, int b, int c)
-//{
-//	return a + b + c;
-//}
+class B : A
+{
+private:
+	double y;
+public:
+	double GetY()
+	{
+		return y;
+	}
+	B()
+	{
+		cout << "B constructor\n";
+	}
+};
+
+class  C : B
+{
+public:
+	C()
+	{
+		cout << "C constructor\n";
+	}
+};
 
 int main()
 {
-	/*cout << sum(5, 3, 3);*/
+	/*A* p1 = new A;*/
+	C* p = new C;
 
-	/*int(*pointer)(int, int) = sum;
-	cout << (*pointer)(32,65);*/
-
-
+	
 }
 
 
